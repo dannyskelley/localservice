@@ -73,7 +73,7 @@
   #hero-2219 .cs-title {
     /* 49px - 61px */
     font-size: clamp(3.0625rem, 6vw, 3.8125rem);
-    max-width: 34.625rem;
+   
     color: var(--bodyTextColorWhite);
   }
   #hero-2219 .cs-text {
@@ -183,11 +183,11 @@
   }
   #hero-2219 .cs-content {
     text-align: left;
-    width: 67%;
-    max-width: 40.375rem;
+    width: 97%;
+    max-width: 50.375rem;
     padding-top: 8.25rem;
     align-items: flex-start;
-    min-height: 500px;
+    min-height: 700px;
   }
   #hero-2219 .cs-text {
     max-width: 32.125rem;
@@ -202,20 +202,36 @@
     margin: 0;
   }
 }
-  @media only screen and (min-width: 780px) {
+
+@media only screen and (min-width: 780px) {
   #hero-2219 .cs-background img {
     width:auto;
    height: 100vh;
    min-height: 870px;
     object-fit: cover;
+    margin:-100px 0px 0px calc(50% - 500px);
+  }
+  @media only screen and (min-width: 810px) {
+  #hero-2219 .cs-background img {
+    width:auto;
+   height: 100vh;
+   min-height: 570px;
+    object-fit: cover;
     margin:-100px 0px 0px calc(50% - 900px);
   }
+
+  #hero-2219 .cs-content {
+
+    min-height: 700px;
+  }
+
+}
  
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 60.25rem) {
   #hero-2219 .cs-content {
-  
+  min-height: 500px;
     box-sizing: content-box;
     /* 16px - 170px */
     margin: auto;
