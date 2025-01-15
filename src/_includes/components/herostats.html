@@ -18,17 +18,20 @@
     min-width: 120rem;
     height: auto;
     object-fit: cover;
-margin:-130px 0px 0px -50px;
-z-index: 997;
+margin:0px 0px 0px -50px;
+z-index: 9999;
     position: absolute;
 
   }
     #stats-340 {
         padding: var(--sectionPadding);
-        overflow: hidden;
+        padding-top: 0px;
+        overflow-x: hidden;
+        overflow-y: visible;
         position: relative;
-        z-index: 998;
-        margin-top:-50px
+        z-index: 9999;
+       
+        background-color: #fff;
 
      
     }
@@ -47,7 +50,7 @@ z-index: 997;
     #stats-340 .cs-card-group {
         width: 100%;
         /* changes to 1280px at desktop */
-        max-width: 37.5rem;
+        max-width: 137.5rem;
         margin: auto;
         padding: 0;
      
@@ -98,7 +101,7 @@ z-index: 997;
         flex-direction: column;
     }
     #stats-340 .cs-number {
-        font-size: 24px;
+        font-size: 18px;
         color: black;
         font-family: "Poppins";
         font-weight: 900;
@@ -119,11 +122,20 @@ z-index: 997;
 /* Tablet - 650px */
 @media only screen and (min-width: 40.625rem) {
 
+    #stats-340 .cs-item {
 
+        text-align: center;
+  
+    }
+    #stats-340 .cs-picture {
+
+        margin: 0px auto;
+        
+    }
 
     #stats-340 .cs-card-group {
         flex-direction: row;
-        flex-wrap: wrap;
+        
         column-gap: 3.125rem;
         row-gap: 3.75rem;
     }
@@ -131,24 +143,23 @@ z-index: 997;
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
 
-    #stats-340 {
- margin:-155px 0px 0px 0px;
-}
     #stats-340 .cs-card-group {
         max-width: 80rem;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        margin-top: 50px;
+        margin-top: 0px;
     }
 
 }
+
+
+
                                 
 </style>
 
   
 
 <div id="stats-340">
-    <img class="cs-graphic-top" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/white-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">                         
 
     <ul class="cs-card-group">
         <li class="cs-item">
@@ -180,6 +191,8 @@ z-index: 997;
                 <!---<span class="cs-desc">aa</span>-->
             </div>
         </li>
+
+        
       
     </ul>
 
