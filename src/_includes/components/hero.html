@@ -20,7 +20,7 @@
     object-fit: cover;
     position: absolute;
     bottom: -1px;
-    left: 50%;
+    left: 53%;
     z-index: 2;
     transform: translateX(-50%);
   }
@@ -185,7 +185,7 @@
     text-align: left;
     width: 97%;
     max-width: 50.375rem;
-    padding-top: 8.25rem;
+    padding-top: 6.25rem;
     align-items: flex-start;
     min-height: 700px;
   }
@@ -231,11 +231,13 @@
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 60.25rem) {
   #hero-2219 .cs-content {
-  min-height: 500px;
+  min-height: 400px;
     box-sizing: content-box;
     /* 16px - 170px */
     margin: auto;
+  }
     
+    #hero-2219 .cs-title {max-width: 100%;}
   }
   #hero-2219 .cs-background {height: 100vh; overflow: hidden;}
   #hero-2219 .cs-background img {
@@ -246,9 +248,13 @@
     margin:-100px 0px 0px 0px;
   }
 
+
+  @media only screen and (min-width: 1400px) {
+  #hero-2219 .cs-content {
+    min-height: 500px;
+
+  }
 }
-
-
                                 
 </style>
 
